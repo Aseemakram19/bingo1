@@ -1,0 +1,27 @@
+{
+  "name": "bingo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "detect-browser-language": "^0.0.2",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "^4.4.0",
+    "socket.io": "^4.5.0",
+    "socket.io-client": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6"
+  },
+  "engines": {
+    "node": "16.20.2"
+  }
+}
