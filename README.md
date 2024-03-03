@@ -13,12 +13,27 @@ Install node.js 16  version  v16.20.2 combatiable with our application
         npm 8.19.4  version 
 First, run the development server:
 
-```bash
-cd bingo1
-npm install
-npm run dev
+Follow this sequence to test out app :
+1. cd bingo1
+2. npm install
+3. npm run dev
+
 to run in background
 nohup npm run dev &
+
+Explaination below:
+
+cd bingo1: Change directory to "bingo1" to navigate into the project's root directory.
+
+npm install: Install project dependencies using npm, ensuring required packages are downloaded and configured.
+
+npm run dev: Run the development script, typically used to start a development server or execute other development-related tasks.
+
+nohup npm run dev &: Run the "npm run dev" command in the background using nohup, allowing it to continue running even after the terminal is closed.
+
+
+
+
 
 ```
 Docker Container application 
