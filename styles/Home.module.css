@@ -1,0 +1,48 @@
+.main {
+  background-color: #E5E5E5;
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_create {
+  background-color: #619B8A;
+  min-width: 300px;
+  color: #E5E5E5;
+  height: 70px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+}
+
+.btn_create:hover, .btn_join:hover {
+  background-color: #FE7F2D;
+  cursor: pointer;
+}
+.btn_join {
+  background-color: #233D4D;
+  min-width: 300px;
+  margin-bottom: 10px;
+  color: #E5E5E5;
+  height: 90px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+}
+
+.img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
