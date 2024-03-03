@@ -14,6 +14,7 @@ Install node.js 16  version  v16.20.2 combatiable with our application
 First, run the development server:
 
 ```bash
+cd bingo1
 npm install
 npm run dev
 to run in background
