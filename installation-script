@@ -44,20 +44,20 @@ sudo apt-get install trivy -y
 sleep 5
 
 
-# 4. Install Terraform
+# 4. Terraform Installation
 
-sudo apt install wget -y
-
-wget https://releases.hashicorp.com/terraform/1.10.5/terraform_1.10.5_linux_amd64.zip
-sleep 5
-sudo apt install unzip -y  # Install unzip if not available
-sleep 5
-unzip terraform_1.10.5_linux_amd64.zip
-sleep 5
-sudo mv terraform /usr/local/bin/
-sleep 5
-terraform -v
-sleep 5
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+wget -O- https://apt.releases.hashicorp.com/gpg | \
+gpg --dearmor | \
+sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+gpg --no-default-keyring \
+--keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
+--fingerprint
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update
+sudo apt-get install terraform -y
 
 
 # 5. Install kubectl
